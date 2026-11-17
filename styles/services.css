@@ -1,0 +1,36 @@
+.services{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  padding: 30px 40px;
+}
+.about{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(233, 249, 222);
+  text-align: center;
+  padding: 20px 10px;
+}
+.about i{
+  font-size: 30px;
+  color: rgb(94, 175, 76);
+  padding: 10px 0;
+}
+.about h3{
+ margin: -5px 0px;
+}
+
+
+@media (max-width: 600px) {
+  .services{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 20px 30px;
+  }
+  .about h3{
+    font-size: 15px;
+  }
+  .about i{
+    font-size: 25px;
+  }
+}

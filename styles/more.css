@@ -1,0 +1,30 @@
+.more{
+  display: grid;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(233, 249, 222); 
+  margin-top: 50px;
+  padding: 20px 20px;
+}
+.morePic {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.moreText h3{
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+@media(max-width: 768px) {
+  .more{
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+  .moreText h3{
+    font-size: 23px;
+  }
+}

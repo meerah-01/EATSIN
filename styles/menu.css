@@ -1,0 +1,126 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+}
+
+.search {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 20px 15px;
+}
+
+.label {
+  color: rgb(94, 175, 76);
+  font-size: 35px;
+  font-weight: bolder;
+  margin-top: 3px;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 8px 10px;
+}
+
+input:focus {
+  outline: none;
+  border: 2px solid rgb(235, 243, 233);
+  box-shadow: 0 0 8px rgba(0, 255, 149, 0.3);
+}
+
+.select {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  justify-content: center;
+  padding: 10px 15px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: white;
+  padding: 15px;
+  border-radius: 20px;
+  margin: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.foodPic {
+  object-fit: cover;
+  width: 100%;
+  height: 180px;
+  border-radius: 8px;
+}
+
+.cartBtn {
+  background-color: rgb(87, 142, 107);
+  color: white;
+  width: 100%;
+}
+
+.load-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 50px;
+  background-color: rgb(87, 142, 107);
+  color: white;
+  justify-self: center;
+  margin-top: 12px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 12px 0 5px;
+  text-align: center;
+}
+
+.price {
+  font-size: 15px;
+  font-size: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.searchBtn {
+  background-color: rgb(87, 142, 107);
+  font-size: 20px;
+  padding: 5px 8px;
+  border-radius: 50px;
+  margin-top: 2px;
+}
+
+@media (max-width: 600px) {
+  .select {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .search{
+    flex-direction: column;
+  }
+  .label{
+    margin-left: 5px;
+    text-align: center;
+  }
+  .input{
+    padding: 5px;
+  }
+  .search div{
+    margin-top: -30px;
+    text-align: center;
+  }
+  .searchBtn{
+    margin-top: auto;
+  }
+  .title{
+    overflow: hidden;
+  }
+
+}

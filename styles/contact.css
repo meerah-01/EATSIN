@@ -1,0 +1,62 @@
+.contact {
+  background-color: rgb(74, 189, 99);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
+}
+
+.contact div {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact div:first-child {
+  padding-left: 30px;
+}
+
+.contact div:last-child {
+  padding-right: 30px;
+}
+
+.nav p {
+  margin-top: 5px;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row !important;
+  gap: 15px;
+}
+
+.icons i {
+  font-size: 25px;
+}
+
+@media(max-width: 768px) {
+  .contact {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contact div:nth-child(3) {
+    padding-left: 30px;
+  }
+
+  .icons i {
+    font-size: 20px;
+  }
+
+  .icons i:nth-child(1) {
+    margin-left: -29px
+  }
+
+  .talk {
+    margin-top: -50px;
+  }
+
+}
